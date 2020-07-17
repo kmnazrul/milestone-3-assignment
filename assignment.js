@@ -21,7 +21,29 @@ console.log(woodResult);
 
 
 // Below is assignment #3
+function brickCalculator(floor){
+    var feet = 1000;
+    var firstTenFloor = 0;
+    var seccondTenFloor = 0;
+    var ThirdFloor;
+        if(floor <= 10){
+            var firstTenFloor = feet * 15 * floor;
+            return firstTenFloor;
+        }
+        else{
+            if(floor >=11 && floor <=20){
+                var seccondTenFloor = feet * 12 * floor;
+                return firstTenFloor + seccondTenFloor;
+            }
+        }
+         if (floor >=21){
+            var ThirdFloor = feet * 10 * floor;
+            return firstTenFloor+ seccondTenFloor + ThirdFloor;
+        }
 
+}
+var result = brickCalculator(11);
+console.log(result)
 
 // Below is assignment #4
 
